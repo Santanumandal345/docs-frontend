@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DocuShare | Share Documents Securely</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <h1><i class="fas fa-share-alt"></i> DocuShare</h1>
+                <p>Smart Document Sharing Platform</p>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#upload">Upload</a>
+                <a href="#browse">Browse</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Share & Manage Documents <span>Effortlessly</span></h2>
+                    <p>Upload, organize, and share important documents with your team. Secure, fast, and user-friendly
+                        platform.</p>
+                    <div class="hero-buttons">
+                        <a href="#upload" class="btn btn-primary"><i class="fas fa-upload"></i> Upload Now</a>
+                        <a href="#browse" class="btn btn-secondary"><i class="fas fa-search"></i> Browse Library</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="upload-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> Upload Document</h2>
+                <div class="upload-card">
+                    <form id="uploadForm">
+                        <div class="form-group">
+                            <label><i class="fas fa-file-alt"></i> Select File *</label>
+                            <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt,.odt" required>
+                            <small>Supported: PDF, DOC, DOCX, TXT, ODT (Max 10MB)</small>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-heading"></i> Title *</label>
+                            <input type="text" id="titleInput" placeholder="Enter document title" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-align-left"></i> Description</label>
+                            <textarea id="descInput" rows="3"
+                                placeholder="Brief description of the document"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-tags"></i> Category</label>
+                            <select id="categoryInput">
+                                <option value="General">General</option>
+                                <option value="Work">Work</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Study">Study</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Upload
+                            Document</button>
+                    </form>
+                    <div id="uploadMessage" class="message"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Browse Section -->
+        <section id="browse" class="browse-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-folder-open"></i> Document Library</h2>
+                <div class="browse-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search by title or description...">
+                    </div>
+                    <div class="filter-box">
+                        <label><i class="fas fa-filter"></i> Category:</label>
+                        <select id="categoryFilter">
+                            <option value="All">All Categories</option>
+                            <option value="General">General</option>
+                            <option value="Work">Work</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Study">Study</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="documentsList" class="documents-grid">
+                    <div class="loading">Loading documents...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Us</h2>
+                <div class="contact-content">
+                    <p>Have questions about DocuShare? Reach out to our team for support or partnership inquiries.</p>
+                    <div class="contact-info">
+                        <div><i class="fas fa-envelope"></i> support@docushare.com</div>
+                        <div><i class="fas fa-phone"></i> +91 7001540481</div>
+                        <div><i class="fab fa-github"></i> <a href="https://github.com/Santanumandal345" target="_blank">github.com/</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DocuShare. All rights reserved. | Secure Document Sharing Platform</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
