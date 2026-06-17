@@ -1,6 +1,6 @@
-const API_URL = 'http://localhost:5000/api/documents';
+// const API_URL = 'http://localhost:5000/api/documents';
 
-
+const API_URL = 'https://docs-backend-d6g3.onrender.com/api/documents';
 let currentDocuments = [];
 
 // Load documents on page load
